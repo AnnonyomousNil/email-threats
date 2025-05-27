@@ -1,0 +1,136 @@
+Delivered-To: johndoe@gmail.com
+Received: by 2002:a05:7022:4408:b0:9b:80:e706 with SMTP id ca8csp3737774dlb;
+        Sun, 18 May 2025 07:22:28 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHnrKO6nI3vhHHvLNKVOMsybRC2veLKz1NkSgEJ1uXy94yS5rCtubQUNk+5Om4De0kx0vx4
+X-Received: by 2002:a05:6a00:22c9:b0:73e:2367:c914 with SMTP id d2e1a72fcca58-742a9afe7b3mr12987400b3a.7.1747578148612;
+        Sun, 18 May 2025 07:22:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1747578148; cv=none;
+        d=google.com; s=arc-20240605;
+        b=LqL1p32G49Z59DQZBJeU6hopgl9henuUvxUIrAyika9plLG7fadcRmQmy7LH7+XPOX
+         KIzusXza/BuHzRMeWnISoAcOtJt8BCdAFiUO1b+mMJDpI1zqy4X3K6dzEY7ow27QuP/M
+         6TKTP9svs3P3228tyzpG2CHcWBmZHZ/evQBApvM+NPEWhvfu7sGGGG4TUCY1z/BlXWzP
+         WqvK46wFRsMA/2xitIBno3BT6YZG02XURklN4qsTwkFftLpHfRUBSz+QI1Ip3k/VCvBc
+         b8NYhiV/rTEfsPgQ8d1DoWV0kZJGJ+Tb7Gw9W5PAJBvjAG+mZovcHfsjg6T9NMqKflhD
+         t7Vw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:message-id:subject:to:from:date:domainkey-signature
+         :dkim-signature;
+        bh=k8AYdXPsi3oRZPDLvOAR/SVsxhxVUkJdnM4DG7B1eKg=;
+        fh=QnNJc1K6KgwxfwqdTLBckmw8rsM8kwa5U7poO8hFrWs=;
+        b=hpGaFBDXzkOaEmreLm2RIQj3A8X+PA2fiAgKsa8iXZ3iKdo9NZ7B1AZJESN9I3Np+5
+         XG+SeF4s0mkOar2NpHQn9UWMuMOB3XTM5c0QN9v1CoPSdaY/vgRDEDtRyVjUldqvIy6z
+         mK71U7OpD0tjF56kNatpr9ZXjg6H30U2lMS7VP52c/7I5UUJbG4FP/3uRVWwvJFyAJAX
+         ot3+qu3v56uAeduv91gHbbNOqKUOzgjcVoPC5fchTqfnSI6vNEz2Ojq1SYEUiW7DlJLp
+         72dMHgAU7qGFttxsG/t7YBuYEDjoNxLbUC0owb/xeg3/YLlyn17SRqLnwD/YkL0EbThE
+         d/vQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@dzetwehd.globalenterprises.pp.ua header.s=smtp header.b=BXnNKBsb;
+       spf=pass (google.com: domain of return@shandolaposart.globalenterprises.pp.ua designates 188.138.122.107 as permitted sender) smtp.mailfrom=return@shandolaposart.globalenterprises.pp.ua
+Return-Path: <return@shandolaposart.globalenterprises.pp.ua>
+Received: from 176-105-252-102.hinet-ip.hinet.net (euvds5000x12.startdedicated.com. [188.138.122.107])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-b26eb0c1774si7472532a12.558.2025.05.18.07.22.27
+        for <johndoe@gmail.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Sun, 18 May 2025 07:22:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return@shandolaposart.globalenterprises.pp.ua designates 188.138.122.107 as permitted sender) client-ip=188.138.122.107;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dzetwehd.globalenterprises.pp.ua header.s=smtp header.b=BXnNKBsb;
+       spf=pass (google.com: domain of return@shandolaposart.globalenterprises.pp.ua designates 188.138.122.107 as permitted sender) smtp.mailfrom=return@shandolaposart.globalenterprises.pp.ua
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp; d=dzetwehd.globalenterprises.pp.ua; h=Date:From:To:Subject:Message-ID:MIME-Version:Content-Type; i=info@dzetwehd.globalenterprises.pp.ua; bh=UUCnE4Ts2FfEXOPSYxgQD9S2jDc=; b=BXnNKBsbAZFQp1OPF3ZL6mO5/EryaPOt1U6+vsNc7iX6Cr5bC1s1rdQpjRJ+Zwq5D+9dPY/9zmDr
+   tsTlRZ9Nl4S5qPEzc4JJr1q6l+sirQ4Iibid+hTuzCx+KvFgNOQP9vKf2Xq1l7ZB8wE+zlU44lzS
+   yTWTRHfBuImnFp3wg18=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp; d=dzetwehd.globalenterprises.pp.ua; b=xayNTFH2aUxvgosCWDC/cfiCAO516OO/tPXQVF3wKQaZ+0ivhE2TVe3lciRBqg9Q89ANlMD3O63I
+   Vl2r4PAxdYEDeJJzYNmhqgWo94/9mUMLVqUkuIwrzPEpVEowfkzlwG1fYKmfjV6ssbx1y37Ci9vX
+   np+53pOckap8BQwHn2Q=;
+Received: from sedamztz.com (ip6-localhost ) by pdr8-services-05v (Postfix) with ESMTP id PYY28AGM for <johndoe@gmail.com>; Sun, 18 May 2025 14:22:26 +0000
+Date: Sun, 18 May 2025 14:22:26 +0000.1315-553121
+From: " 'Sephora®' " <info@dzetwehd.globalenterprises.pp.ua>
+To: johndoe@gmail.com
+Subject: John - You have won a Lancôme Beauty Box 🎁
+Message-ID: <40nza3wi-44lyi6l1-hnd45fty-hg1mmj9n-reyrfva3@convertkit-mail2.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; boundary="188.138.122.107"; report-type=delivery-status
+
+--188.138.122.107
+Content-Type: multipart/related; boundary="188-138-122-107.hinet-ip.hinet.net"
+
+--188-138-122-107.hinet-ip.hinet.net
+Content-Type: multipart/alternative; boundary="USA22"
+
+--USA22
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: Sep 0, 2019
+
+103882302891885308
+-----
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+--USA22
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit+
+
+DQoNCjwhLS0tLS0tLS0tLS0tIFNUQVJUIFNPQ0lBTCBNRURJQSAtLS0tLS0tLS0tLS0+DQo8ZGl2
+IGNsYXNzPSJnbWFpbF9xdW90ZSI+IA0KDQo8IWRvY3R5cGUgaHRtbD4NCjxib2R5Pg0KICAgIDxj
+ZW50ZXI+DQogICAgICAgIDxkaXYgc3R5bGU9IndpZHRoOjU1MHB4O2JhY2tncm91bmQ6I0Y3RjdG
+Nztmb250LWZhbWlseTphcmlhbDsiPg0KICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9zdG9y
+YWdlLmdvb2dsZWFwaXMuY29tL3dhcmViaXJlYmltM2FoYWRsOWF3bS93YXJlYmlyZWJpbTNhaGFk
+bDlhd20uaHRtbCM0dmFsUFExNDY0MDVTcHVtODcxd3RjeGR4b2ZiaTEzMTVOSFREUFpMUFJYWlVM
+Wko1NTMxMjFXUE9YMTYyNkoyMSIgc3R5bGU9ImNvbG9yOmJsYWNrOyB0ZXh0LWRlY29yYXRpb246
+bm9uZTsiPg0KICAgICAgICAgICAgPGRpdiBzdHlsZT0iYmFja2dyb3VuZDpibGFjazsiPg0KICAg
+ICAgICAgICAgICAgIDxzcGFuIHN0eWxlPSJmb250LXNpemU6MTZweDtjb2xvcjp3aGl0ZSI+SXQg
+b25seSB0YWtlcyBhIG1pbnV0ZSB0byBjbGFpbSB5b3VyIGFtYXppbmcgcmV3YXJkLjwvc3Bhbj4N
+CiAgICAgICAgPC9kaXY+PGJyPg0KICAgICAgICAgICAgCQkJCQk8c3BhbiBzdHlsZT0idGV4dC1h
+bGlnbjogY2VudGVyOyI+DQogICAgPGEgaHJlZj0iaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMu
+Y29tL3dhcmViaXJlYmltM2FoYWRsOWF3bS93YXJlYmlyZWJpbTNhaGFkbDlhd20uaHRtbCM0b3Np
+T2QxNDY0MDVUZW1JODcxanN2Z3d0eWdodTEzMTVVSFFVT0RCVkNKVUJYQ1E1NTMxMjFVRUJPMTYy
+NmsyMSIgc3R5bGU9ImZvbnQtZmFtaWx5OiAnR29vZ2xlIFNhbnMnLCBSb2JvdG8sIFJvYm90b0Ry
+YWZ0LCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDE1cHg7IGNvbG9y
+OiAjNEEyMzZGOyB0ZXh0LWRlY29yYXRpb246bm9uZTsiPg0KICAgICAgICA8c3BhbiBzdHlsZT0i
+Zm9udDogNzBweCBJTVBBQ1Q7IGxldHRlci1zcGFjaW5nOiAyMHB4OyI+DQogICAgICAgICAgICA8
+Yj4NCiAgICAgICAgICAgICAgICA8c3BhbiBzdHlsZT0iY29sb3I6YmxhY2s7IGJvcmRlci1yYWRp
+dXM6IDIwcHg7IGZvbnQtZmFtaWx5OmFyaWFsOyI+U0VQSE9SQTwvc3Bhbj4NCiAgICAgICAgICAg
+IDwvYj4NCiAgICAgICAgPC9zcGFuPg0KICAgIDwvYT4NCjwvc3Bhbj4NCjxicj4NCiAgICAgICAg
+ICAgIAkJCQkJDQogICAgICAgICAgICA8Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjI1cHg7Y29s
+b3I6YmxhY2s7dGV4dC1zaGFkb3c6IDFweCAxcHggMTBweCBibGFjazsiPjxicj48YnI+PHNwYW4g
+c3R5bGU9ImNvbG9yOmJsYWNrO2ZvbnQtc2l6ZTozMHB4Ij5UaGUgTGF0ZXN0IEJlYXV0eSBUcmVu
+ZHM8L3NwYW4+PGJyPjxzcGFuIHN0eWxlPSJjb2xvcjpibGFjaztmb250LXNpemU6MzBweDtjb2xv
+cjojRTExQTJCIj5Ub2RheeKAmXMgV2lubmVyIGlzIG1vbmlrYWt1bWFyaTM3OTwvc3Bhbj48YnI+
+PHNwYW4gc3R5bGU9ImNvbG9yOmJsYWNrO2ZvbnQtc2l6ZTozMHB4Ij5ZT1UgSEFWRSBCRUVOIFNF
+TEVDVEVEITwvc3Bhbj48YnI+DQoNCjwvc3Bhbj48L2I+DQoNCjxiPjxzcGFuIHN0eWxlPSJmb250
+LXNpemU6MjVweDtjb2xvcjpibGFjazt0ZXh0LXNoYWRvdzogMXB4IDFweCAxMHB4IGJsYWNrOyIg
+PlRvIHJlY2VpdmUgeW91ciBnaWZ0Ojwvc3Bhbj48L2I+PGJyPjxicj4NCg0KICAgICAgICAgICAg
+PGI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTozM3B4O2NvbG9yOiNiZmFjMDA7dGV4dC1kZWNvcmF0
+aW9uOiB1bmRlcmxpbmUgb3ZlcmxpbmUgI2JmYWMwMDsiPkxhbmPDtG1lIEJlYXV0eSBCb3g8L3Nw
+YW4+PC9iPg0KICAgICAgICAgICAgPGJyPjxicj48YnI+DQogICAgICAgICAgICA8Yj48YSBocmVm
+PSJodHRwczovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vd2FyZWJpcmViaW0zYWhhZGw5YXdtL3dh
+cmViaXJlYmltM2FoYWRsOWF3bS5odG1sIzRQRHN2TzE0NjQwNWVxeUg4NzFvbGdkeXRseWFuMTMx
+NVFWTFFBVEZaWEpDRVdaUzU1MzEyMUxXSloxNjI2TDIxIiBzdHlsZT0iYmFja2dyb3VuZDojRTEx
+QTJCO3BhZGRpbmc6MTBweDtwYWRkaW5nLWxlZnQ6NTBweDtwYWRkaW5nLXJpZ2h0OjUwcHg7Zm9u
+dC1zaXplOjIycHg7Ym9yZGVyOnNvbGlkIGJsYWNrO2NvbG9yOndoaXRlO3RleHQtZGVjb3JhdGlv
+bjogbm9uZTsiPkNsYWltIFlvdXIgR2lmdDwvYT48L2I+PGJyPjxicj48YnI+DQogICAgICAgICAg
+ICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kOmJsYWNrOyI+DQogICAgICAgICAgICA8YnI+PGI+PHNw
+YW4gc3R5bGU9ImZvbnQtc2l6ZTozNXB4O2NvbG9yOiAjYmZhYzAwICI+Q29uZ3JhdHVsYXRpb25z
+PC9zcGFuPjwvYj4NCiAgICAgICAgICAgIDxicj48YnI+PGJyPjxzcGFuIHN0eWxlPSJwYWRkaW5n
+OjEuNXB4O2ZvbnQtc2l6ZToyMHB4O2NvbG9yOndoaXRlO3BhZGRpbmc6MTBweDsiPg0KWW91J3Zl
+IGJlZW4gc2VsZWN0ZWQgdG8gam9pbiBvdXIgbG95YWx0eSBwcm9ncmFtIDxiIHN0eWxlPSJjb2xv
+cjojRTExQTJCIj5mb3IgRlJFRSE8L2I+IEl0IG9ubHkgdGFrZXMgYSBtaW51dGUgdG8gcmVjZWl2
+ZSB0aGlzIGluY3JlZGlibGUgcmV3YXJkLjwvYj48YnI+DQo8Yj48Y2VudGVyIHN0eWxlPSJmb250
+LXNpemU6MTVweDtjb2xvcjpibGFjayI+wqkgMjAyNSBHUk9VUEUgTk9DSUJFIFNBUzwvY2VudGVy
+PjwvYj48L3NwYW4+PGJyPg0KICAgIA0KICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj48YnI+PGJy
+Pjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+
+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48
+YnI+PGJyPjxicj48YnI+PGJyPg0KICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTox
+MHB4O2NvbG9yOiM3NTc1NzUiPklmIHlvdSBubyBsb25nZXIgd2lzaCB0byByZWNlaXZlIHRoZXNl
+IGVtYWlscywgeW91IG1heSB1bnN1YnNjcmliZSBieSA8c3BhbiBzdHlsZT0iY29sb3I6Ymx1ZTt0
+ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsiPjxhIGhyZWY9Imh0dHBzOi8vc3RvcmFnZS5nb29n
+bGVhcGlzLmNvbS93YXJlYmlyZWJpbTNhaGFkbDlhd20vd2FyZWJpcmViaW0zYWhhZGw5YXdtLmh0
+bWwjNWZ3ZW1nMTQ2NDA1RVhwZTg3MXNvcnJpaXVya3YxMzE1TlNGTUtIQVZBRURHSUxZNTUzMTIx
+V1FMRTE2MjZjMjEiPmNsaWNraW5nIGhlcmUuPC9hPjwvc3Bhbj48YnI+IDwvc3Bhbj4NCiAgICA8
+L2NlbnRlcj4NCjwvYm9keT4NCg==
+--USA22--
+--188-138-122-107.hinet-ip.hinet.net--
+--188.138.122.107--
